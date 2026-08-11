@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Helpful: Keeps multi-line text balanced in the center */
+        border: 2px solid black;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .transition-box {
+        background-color: blueviolet;
+        transition: background-color 3s ease, box-shadow 1s ease;
+      }
+
+      .transition-box:hover {
+        background-color: darkorange;
+        box-shadow: 0 4px 30px rgba(168, 7, 7, 0.3);
+      }
+
+      .animation-box {
+        background-color: lightgreen;
+        animation: fadeSlideUp 3s ease infinite alternate;
+      }
+
+      @keyframes fadeSlideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box animation-box">I FADE AND SLIDE UP</div>
+      <div class="box transition-box">HOVER ME</div>
+    </div>
+  </body>
+</html>
