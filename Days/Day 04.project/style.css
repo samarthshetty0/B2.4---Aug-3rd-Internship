@@ -1,0 +1,269 @@
+/* GLOBAL SETTINGS */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #05050a; /* Matches your hero background starting tone */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR (Kept exactly from your code) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: whitesmoke; 
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    color: rgb(241, 243, 244);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    transition: color 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(124, 124, 238);
+}
+
+/* HERO SECTION (Kept exactly from your code) */
+.hero-sec {
+    color: whitesmoke;
+    background: linear-gradient(90deg, #05050a 0.000%, #05050a 7.692%, #090a0e calc(7.692% + 1px), #090a0e 15.385%, #0d0e12 calc(15.385% + 1px), #0d0e12 23.077%, #121316 calc(23.077% + 1px), #121316 30.769%, #16171a calc(30.769% + 1px), #16171a 38.462%, #1a1b1e calc(38.462% + 1px), #1a1b1e 46.154%, #1e1f22 calc(46.154% + 1px), #1e1f22 53.846%, #222326 calc(53.846% + 1px), #222326 61.538%, #26272a calc(61.538% + 1px), #26272a 69.231%, #292a2d calc(69.231% + 1px), #292a2d 76.923%, #2c2d30 calc(76.923% + 1px), #2c2d30 84.615%, #2e2f33 calc(84.615% + 1px), #2e2f33 92.308%, #303135 calc(92.308% + 1px) 100.000%);
+    padding: 150px;
+    text-align: center;
+}
+
+.hero-sec h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease; 
+}
+
+.tagline {
+    animation: fadeInUp 1.5s ease; 
+    color: whitesmoke;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    animation: fadeInUp 1.65s ease; 
+    display: flex;       
+    justify-content: center;
+    gap: 15px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTTONS (Fixed syntax error and kept your styles) */
+.btn {
+    border: 2px solid white; /* Fixed original color error */
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {   
+    background: transparent;
+    text-decoration: none;
+    color: azure;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: rgb(43, 43, 148);
+}
+
+.btn-secondary {
+    background: transparent;
+    text-decoration: none;
+    color: azure;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: rgb(43, 43, 148);
+}
+
+/* FOR ABOUT (Updated to a clean dark theme) */
+.about-sec {
+    background: #090a0e;
+    text-align: center;
+    padding: 80px 25px;
+}
+
+.about-sec h2, 
+.skill-sec h2, 
+.project-sec h2, 
+.contact-sec h2 {
+    color: #66fcf1; /* High visibility neon accent for titles */
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.profile-fig img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #66fcf1;
+}
+
+figcaption {
+    color: #c5a880; 
+    margin-top: 10px;
+}
+
+.about-content p {
+    color: #c5c6c7; /* Clear silver-white visible text */
+    font-size: 25px;
+}
+
+/* FOR SKILLS */
+.skill-sec {
+    background-color: #05050a;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.skill-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background: #121316;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    border-color: #66fcf1;
+}
+
+/* FOR PROJECTS */
+.project-sec {
+    background: #090a0e;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-grid article {
+    background: #121316;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-grid img {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.project-grid h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-grid p {
+    color: #c5c6c7;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile-tag .tag {
+    background: #66fcf1;
+    color: #05050a;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.project-grid .button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    color: #66fcf1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.project-grid .button:hover {
+    border-color: #66fcf1;
+}
+
+/* FOR CONTACT */
