@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // method 1
+        function greet(name) {
+            // return "Hello " + name + "!"; 
+            return `Hello ${name}!`; //template literal
+        }
+        console.log(greet("Samarth Shetty"));
+        
+        // method 2 
+        // var name is function name
+        let greet1=function(name){
+            return `Hello ${name}!`;
+        }
+        console.log(greet1("Samarth Shetty"));
+
+
+        // method 3 (arrow function)
+        let square = (a) => a * a;
+        console.log(square(5));
+
+
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+        // console.log(sum(5, 10));
+
+        //default parameters
+        function sum(a, b=4) {
+            return a + b;
+        }
+        console.log(sum(5));
+        console.log(sum(5, 10));
+    </script>
+</body>
+</html>

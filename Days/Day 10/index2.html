@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="one" id="demo"></h2>
+    <div class="divv"></div>
+    <div class="divv"></div>
+    <div class="divv"></div>
+    <script>
+        document.getElementById("demo").textContent = "Hello JavaScript!";
+        let result = document.getElementsByClassName("divv")[1];
+        result.textContent = "This is a div element.";
+        document.querySelector(".divv").textContent = "This is the query selector.";
+    </script>
+</body>
+</html>

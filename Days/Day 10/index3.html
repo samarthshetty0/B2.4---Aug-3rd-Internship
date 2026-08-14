@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: rgb(24, 24, 19);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="demo" class="sample">Hello, World!</h1>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <button id="myButton" onclick="changeBackgroundColor()">Click Me to change background color</button >
+    <script>
+        let result = document.querySelector("h1");
+        console.log(result);
+        let link = document.querySelector("a");
+        console.log(link);
+        let button = document.querySelector("#myButton");
+        console.log(button);
+        result.textContent = "Hello World!";
+        result.innerHTML = "<em>Hello JavaScript!</em>";
+        result.style.color = "chocolate";
+        result.style.fontSize = "50px";
+        result.style.fontFamily = "Arial, sans-serif";
+        result.classList.add("highlight"); // adding class
+        result.classList.remove("sample"); // removing class
+        result.classList.toggle("highlight"); // toggling class
+        result.classList.toggle("highlight"); // toggling class again
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+    </script>
+</body>
+</html>
