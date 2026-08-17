@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- callback fn -> a fun that is passes as an argumrnt to anothrt fun -->
+     <!-- add event listener(event,callback fun) -->
+    <button id="btn">Click Me</button>
+    <h3 id="status">Light is OFF</h3>
+    <button id="swbtn">Turn ON</button>
+ 
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            alert("You clicked the button")
+        });
+ 
+        let swbtn = document.getElementById("swbtn");
+        let status = document.getElementById("status");
+        // passing a fun as a parameter-->
+        swbtn.addEventListener("click", function() // here 
+        {
+            status.textContent = "Light is ON";
+            swbtn.textContent = "Turn OFF";
+        })
+ 
+    </script>
+</body>
+</html>
