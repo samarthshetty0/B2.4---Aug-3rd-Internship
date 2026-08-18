@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth Shetty</title>
     <meta name="description" content="Student">
-    <meta name="keywords" content="Android developer,"><!-- SEARCH ENGINE OPTIMIZATION-->
+    <meta name="keywords" content="Android developer, student, software developer"><!-- SEARCH ENGINE OPTIMIZATION-->
 
 
     <!-- OPEN GRAPH FOR SOCIALS(WA,FB,LI)-->
@@ -15,16 +16,18 @@
 
 
     <!-- TWITTER CARD  -->
-     <meta name="twitter:card" content="summary_large_image">
-     <meta name="twitter:title" content="Samarth Shetty">
-     <meta name="twitter:description" content="Portfolio and Projects">
-     <link rel="shortcut icon" href="../modern-car-captured-in-close-upgraphy-with-precision-and-innovation-free-photo.jpg" type="image/x-icon"> 
-     <link rel="stylesheet" href="style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Samarth Shetty">
+    <meta name="twitter:description" content="Portfolio and Projects">
+
+    <link rel="shortcut icon" href="../modern-car-captured-in-close-upgraphy-with-precision-and-innovation-free-photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body> 
+
     <!-- header + navigation -->
-     <header class="site-header">
+    <header class="site-header">
         <nav class="navbar">
             <div class="logo">SamFunDev</div>   
             <ul class="nav-links">  
@@ -33,62 +36,119 @@
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button class="theme-toggle" id="theme-toggle">
+                Toggle Theme 💡
+            </button>
         </nav>
-     </header>
+    </header>
 
 
     <!-- MAIN CONTENT  -->
-     <main>                 
+    <main>                 
+
         <!-- A HERO SECTION  -->
-        <section class="hero-sec" id="hero">
-            <h1>Hi!, I am Samarth Shetty</h1>
-            <p class="tagline">i am a Student and I like tech</p>
-            <div class="hero-btn">
-                <a href="" class="btn btn-primary">View My Work</a>
-                <a href="" class="btn btn-secondary">Contact me</a>
+        <section class="hero-sec hero-section" id="hero">
+
+            <h1 class="hero-title">
+                Hi!, I am Samarth Shetty
+            </h1>
+
+            <p class="tagline">
+                I am a Student and I like tech
+            </p>
+
+            <div class="hero-btn hero-buttons">
+
+                <a href="#project" class="btn btn-primary">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Contact me
+                </a>
+
             </div>
+
         </section>
 
 
         <!-- About Section  -->
-         <section class="about-sec" id="about">
+        <section class="about-sec about-section" id="about">
+
             <h2>About Me</h2>
+
             <div class="about-content">
-                <figure class="profile-fig">
-                    <img src="./93e8d0313894ff752ef1c6970116bad6.jpg" alt="pfp" width="150">
-                    <figcaption>Exploring tech</figcaption>
+
+                <figure class="profile-fig profile-figure">
+
+                    <img src="./93e8d0313894ff752ef1c6970116bad6.jpg"
+                         alt="pfp"
+                         width="150">
+
+                    <figcaption>
+                        Exploring tech
+                    </figcaption>
+
                 </figure>
-                <div>
+
+                <div class="about-text">
                     <p>Developer</p>
                 </div>
+
             </div>
-         </section>
+
+        </section>
 
 
-         <!-- Skill Section  -->
-          <section class="skill-sec" id="skill">
+        <!-- Skill Section  -->
+        <section class="skill-sec skills-section" id="skill">
+
             <h2>Skills</h2>
-            <div class="skill-grid">
+
+            <div class="skill-grid skills-grid">
+
                 <div class="skill-item">HTML</div>
                 <div class="skill-item">CSS</div>
                 <div class="skill-item">JS</div>
                 <div class="skill-item">REACT</div>
-            </div>
-          </section>
 
-          <!-- Project Section  -->
-           <section class="project-sec" id="project">
+            </div>
+
+        </section>
+
+
+        <!-- Project Section  -->
+        <section class="project-sec project-section" id="project">
+
             <h2>My Projects</h2>
+
             <div class="project-grid">
-                <article>
-                    <img src="./images.jpg" alt="imagee" width="130">
+
+                <article class="project-card">
+
+                    <img src="./images.jpg"
+                         alt="imagee"
+                         width="130">
+
                     <h3>Health app</h3>
+
                     <p>Health care prototype</p>
-                    <div class="profile-tag">
-                    <span class="tag">Frontend</span>
+
+                    <div class="profile-tag project-tags">
+                        <span class="tag">Frontend</span>
                     </div>
-                    <a href="" class="button">live demo</a>
-                    <a href="https://github.com/samarthshetty0/VitalTrack" class="button">github</a>
+
+                    <a href="" class="button">
+                        live demo
+                    </a>
+
+                    <a href="https://github.com/samarthshetty0/VitalTrack"
+                       class="button"
+                       target="_blank">
+                        github
+                    </a>
+
                 </article>
 
                 <!-- for other projects
@@ -113,49 +173,97 @@
                     <a href="" class="button">live demo</a>
                     <a href="" class="button">github</a>
                 </article> -->
+
+
             </div>
-           </section>
 
-           <!-- Contact Section  -->
-           <section class="contact-sec" id="contact">
+        </section>
+
+
+        <!-- Contact Section  -->
+        <section class="contact-sec contact-section" id="contact">
+
             <h2>Get In Touch</h2>
-            <form action="">
+
+            <form action="" id="contact-form">
+
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           required>
+
                 </div>
 
-                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           required>
+
                 </div>
 
-                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" required rows="5" cols=""></textarea>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea name="message"
+                              id="message"
+                              required
+                              rows="5"></textarea>
+
                 </div>
-                <button type="submit" id="btnn">Send Message</button>
+
+                <button type="submit" id="btnn">
+                    Send Message
+                </button>
+
             </form>
-           </section>
-     </main>
 
-     <footer>
-        <p> &copy;2026 Built with HTML</p>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy;
+            <span class="footer-year"></span>
+            Built with HTML
+        </p>
+
         <nav id="footer">
-            <a href="https://github.com/samarthshetty0" target="_blank">GitHub</a>
-            <a href="https://github.com/samarthshetty0" target="_blank">Linkedin</a>
+
+            <a href="https://github.com/samarthshetty0"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="YOUR_LINKEDIN_URL"
+               target="_blank">
+                Linkedin
+            </a>
+
         </nav>
-     </footer>
+
+    </footer>
 
 
-<!-- <body>
-      id and class used for css 
-    <h1 id="one">Hello!</h1>
-    <h1 id="two">Hi!</h1>
-    <p class="three">paragraph</p>
-    <p class="three"> second paragraph</p>
-    <p class="demo"> third paragraph</p> 
-  
-    
+    <script src="./script.js"></script>
+
 </body>
-</html> -->
+</html>
+```
