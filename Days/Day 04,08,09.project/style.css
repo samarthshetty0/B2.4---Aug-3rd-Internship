@@ -373,7 +373,7 @@ body.light-theme .nav-links a:hover{
     color: red;
 }
 body.light-theme .hero-section{
-    background: linear-gradient(90deg,rgb(191, 239, 246) 0%, rgb(195, 237, 245) 34%, rgb(198, 235, 249) 100%);
+    background: linear-gradient(90deg,rgb(7, 40, 48) 0%, rgb(195, 237, 245) 34%, rgb(198, 235, 249) 100%);
 }
 body.light-theme .hero-title{
     color: rgb(4, 92, 92);
@@ -427,9 +427,14 @@ body.light-theme .project-grid{
     background-color: azure;
 }
 body.light-theme .project-section h2{
-  color: rgb(4, 92, 92);
+      color: rgb(4, 92, 92);
+      background-color: azure;
 }
-body.light-theme .project-card{
+body.light-theme .project-section{
+      color: rgb(4, 92, 92);
+      background-color: azure;
+}
+body.light-theme .project-card{ 
     background-color: azure;
     border-color: rgb(65, 135, 135);
 }
